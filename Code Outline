@@ -1,0 +1,86 @@
+// === [Includes and Constants] ===
+// Includes (if needed for WiFi/API in the future)
+// Pin assignments for buttons, LEDs, and RGB indicators
+
+// === [Structs and Enums] ===
+struct SurfData {
+  float waveheight;
+  String oceantide;
+  float windspeed;
+  String overallrating;
+};
+
+enum Beach { BEACHA, BEACHB, BEACHC };
+Beach selectedBeach = BEACHB;  // default
+
+// === [Global Variables] ===
+// SurfData objects for each beach
+// Previous button states for edge detection
+
+// === [Setup Function] ===
+void setup() {
+  Serial.begin(...);
+  configurePins();
+  clearAllLEDs();
+}
+
+// === [Main Loop] ===
+void loop() {
+  handleBeachSelection();  // edge-detected button input
+  updateDisplay();         // update LEDs based on selected beach
+  delay(200);              // debounce delay
+}
+
+// === [Helper Functions] ===
+
+void configurePins() {
+  // Set pinMode for all inputs and outputs
+}
+
+void handleBeachSelection() {
+  // Detect rising/falling edge of button press
+  // Update selectedBeach enum
+}
+
+void updateDisplay() {
+  SurfData current = getSurfDataFor(selectedBeach);
+
+  updateBeachSelectorLEDs();
+  updateSurfRatingLED(current.overallrating);
+  updateWaveHeightLEDs(current.waveheight);
+  updateWindSpeedLEDs(current.windspeed);
+  updateTideLevelLEDs(current.oceantide);
+  updateGlobalRGB(current.overallrating);  // optional
+}
+
+SurfData getSurfDataFor(Beach beach) {
+  // return beachA, beachB, or beachC based on selection
+}
+
+void updateBeachSelectorLEDs() {
+  // Turn on only the LED for the current beach
+}
+
+void updateSurfRatingLED(String rating) {
+  // Set ARATING, BRATING, or CRATING based on selectedBeach and rating
+}
+
+void updateWaveHeightLEDs(float height) {
+  // Set all LOW, then one HIGH based on thresholds
+}
+
+void updateWindSpeedLEDs(float wind) {
+  // Set all LOW, then one HIGH based on thresholds
+}
+
+void updateTideLevelLEDs(String tide) {
+  // Set all LOW, then one HIGH ("low", "medium", "high")
+}
+
+void updateGlobalRGB(String rating) {
+  // Optional: RGB LED changes color based on "good", "okay", "bad"
+}
+
+void clearAllLEDs() {
+  // Set all LEDs and RGB pins LOW
+}
