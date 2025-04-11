@@ -3,6 +3,7 @@ This project is a real-time Surf Condition Visualizer built on an ESP32, using l
 
 🔧 Features
 Three Beach Selector Buttons – Instantly switch between Beach A, B, or C.
+
 Wave Height LEDs – Low, Medium, or High indication via dedicated LEDs.
 Wind Speed LEDs – Visual indication of calm, breezy, or windy conditions.
 Tide Level LEDs – Shows if the tide is low, medium, or high.
