@@ -1,0 +1,27 @@
+//Needed for arduino software
+void setup()
+void loop()
+
+//Pin set up and initialize
+void configurePins()
+void clearAllLEDs()
+
+// Checks buttons to decide which beach to display
+void handleBeachSelection()
+
+//Gathers data and updates all the led displays for the grid
+void updateDisplay()
+
+//Creates a struct for the beaches data
+// height, tide, wind, overall rating
+SurfData getSurfDataFor(Beach beach)
+
+
+
+
+
+
+
+
+
+
