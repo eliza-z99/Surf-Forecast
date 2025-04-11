@@ -1,0 +1,50 @@
+   -------------------
+1  |         x  x  x | 
+2  | O  x    x  x  x | 
+3  | O  x    x  x  x |
+4  | O  x    x  x  x |
+   -------------------
+1)
+Represent which beach is being displayed
+Left Beach A
+Middle Beach B
+Right Beach C
+        x  x  x  
+
+2) 
+O represent button to display Beach A
+x represent the rating of Beach A, will be RGB (Green = good, Yellow = okay, Red = Bad)
+Represent the wave height for the beach
+Left 0 - 3 ft
+Middle 3 - 6 ft
+Right >6 ft
+      x  x  x
+
+3)
+O represent button to display Beach B
+x represent the rating of Beach B, will be RGB (Green = good, Yellow = okay, Red = Bad)
+Represent the tide for the beach
+Left low tide
+Middle mid tide
+Right high tide
+      x  x  x
+
+4)
+O represent button to display Beach A
+x represent the rating of Beach A, will be RGB (Green = good, Yellow = okay, Red = Bad)
+Represent the wind speed and direction
+Left offshore
+Middle onshore
+Right wind speed (Green = low wind, Yellow = middle, Red = high wind)
+      x  x  x
+
+
+
+
+
+
+
+
+
+
+
